@@ -1,4 +1,4 @@
-/* adding new values to custom properties*/
+/* adding line heights custom properties*/
 
 :root {
     --color-primary: #d73953;
@@ -36,7 +36,7 @@ body {
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-small);
+    line-height: var(--line-height-base);
 }
 
 h1, h2, h3, h4, h5, h6 {
