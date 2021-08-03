@@ -1,0 +1,7 @@
+/* using parent selector to aplied at the outer selector */
+
+button {
+    color: #FF0000;
+
+    &:hover {color: #00FF00}
+}
