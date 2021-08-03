@@ -1,0 +1,13 @@
+/* more nested declarations */
+@mixin Margin ($value: 0px) {
+    margin-left: $value;
+    margin-right: $value;
+}
+
+body {
+    @include Margin($value: 10px)
+}
+
+div {
+    @include Margin($value: 15px)
+}
