@@ -1,0 +1,12 @@
+/* using variables in sass */
+$new_color: #3D3D3D;
+$new_bg_color: #6D6D6D;
+
+body {
+    color: $new-color;
+    background-color: $new_bg_color;
+}
+
+p {color: $new-color}
+
+h2 {background-color: $new_bg_color;}
