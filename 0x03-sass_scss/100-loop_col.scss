@@ -1,0 +1,8 @@
+/* Columns and operators using for loop */
+$percent: 100%;
+
+@for $i from 1 through 4 {
+    .col-#{$i} {
+        width: $percent / $i;
+    }
+}
