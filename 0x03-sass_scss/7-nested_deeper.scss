@@ -1,0 +1,11 @@
+/* more nested declarations */
+
+button {
+    font-size: 14px;
+
+    h1 {font-size: 16px;}
+
+    .smaller {
+        h1 {font-size: 12px;}
+    }
+}
