@@ -1,0 +1,22 @@
+/* sort string function */
+@import '103-sort_list';
+
+@function compare($string-a, $string-b, $list_to_sort) {
+    $string-a: to-lower-case($string-a + unquote(""));
+    $string-b: to-lower-case($string-b + unquote(""));
+
+    @for $i from 1 through min(
+            str-length($string-a), str-length($string-b)) {
+
+        $char-a: str-slice($string-a, $i, $i);
+        $char-b: str-slice($string-b, $i, $i);
+
+        @if $char-a and $char-b and index(
+            $order, $char-a) != index($list_to_sort, $char-b) {
+        @return index(
+            $list_to_sort, $char-a) < index($list_to_sort, $char-b);
+        }
+    }
+
+    @return str-length($string-a) < str-length($string-b);
+}
